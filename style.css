@@ -285,7 +285,7 @@
   background-image: url(icons/Icon-Burger-menu-hover.png);
 }
 .icon--close {
-  background-image: url(/src/icons/Icon-Close.png);
+  background-image: url(icons/Icon-Close.png);
 }
 
 .nav__list {
