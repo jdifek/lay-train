@@ -1,0 +1,54 @@
+.header {
+/*   display: none !important;
+ */  height: 100vh;
+  background-image: url(images/header-bg-mobile.png);
+  background-size: cover;
+  background-position: center;
+
+
+  
+  &__bottom {
+    padding-bottom: 40px;
+
+    @include onTablet {
+      padding-bottom: 64px;
+    }
+  }
+
+  &__content {
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  &__waves {
+    width: 48px;
+    height: 58px;
+    margin-bottom: 16px;
+    background-image: url(images/Sound-waves.png);
+    background-size: cover;
+
+    @include onTablet {
+      width: 63px;
+      height: 76px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    font-style: italic;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+    margin: 0px;
+    display: block;
+
+    @include onTablet {
+      font-size: 40px;
+    }
+  }
+}
