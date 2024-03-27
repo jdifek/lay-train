@@ -6,7 +6,6 @@
     row-gap: 96px;
     padding-block: 96px;
   
-    @include contentPaddingInline;
   
     @include onTablet {
       row-gap: 120px;
