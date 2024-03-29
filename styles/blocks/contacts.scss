@@ -21,7 +21,7 @@
       }
 
       @include onDesktop {
-
+        grid-column: 1 / 6;
       }
     }
 
@@ -34,21 +34,9 @@
       }
 
       @include onDesktop {
-
+        grid-column: 8 / 11;
       }
     }
-  }
-
-  &__input-name {
-    
-  }
-  
-  &__input-email {
-    
-  }
-  
-  &__input-message {
-    
   }
 
   &__input-name,
@@ -99,16 +87,6 @@
 
     border: 3px solid rgb(41, 41, 41);
     border-radius: 40px;
-
-    
-
-    @include onTablet {
-      
-    }
-
-    @include onDesktop {
-      
-    }
   }
 
   &__button--spaced {
@@ -116,6 +94,7 @@
   }
 
   &__transparent-text {
+    height: max-content;
     color: rgb(159, 173, 194);
     font-family: Inter;
     font-size: 14px;
