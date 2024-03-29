@@ -15,8 +15,7 @@
 }
 
 .header {
-  /*   display: none !important;
-   */
+  /*  display: none !important; */
   height: 100vh;
   background-image: url(images/header-bg-mobile.png);
   background-size: cover;
@@ -448,6 +447,115 @@
     width: 188px;
     height: 24px;
   }
+}
+
+.contacts__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -1.5px;
+}
+.contacts__grid {
+  display: grid;
+  --columns:2;
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(var(--columns), 1fr);
+}
+@media (min-width: 576px) {
+  .contacts__grid {
+    --columns:6;
+    column-gap: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .contacts__grid {
+    --columns:12;
+  }
+}
+.contacts__grid-input {
+  display: grid;
+  grid-column: 1/-1;
+}
+@media (min-width: 576px) {
+  .contacts__grid-input {
+    grid-column: 1/4;
+  }
+}
+.contacts__grid-contact {
+  display: grid;
+  grid-column: 1/-1;
+}
+@media (min-width: 576px) {
+  .contacts__grid-contact {
+    grid-column: 4/6;
+  }
+}
+.contacts__input-name, .contacts__input-email, .contacts__input-message {
+  color: rgb(126, 126, 131);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  box-sizing: border-box;
+  border-width: 0;
+  width: 100%;
+  height: 48px;
+  border-radius: 40px;
+  background: rgb(248, 248, 250);
+  padding: 14px 16px;
+}
+.contacts__input-name--spaced {
+  margin-bottom: 16px;
+}
+.contacts__input-email--spaced {
+  margin-bottom: 16px;
+}
+.contacts__input-message {
+  height: 148px;
+  text-align: left;
+}
+.contacts__input-message--spaced {
+  margin-bottom: 32px;
+}
+.contacts__button {
+  color: rgb(41, 41, 41);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0px;
+  text-align: center;
+  height: 56px;
+  width: 100%;
+  border: 3px solid rgb(41, 41, 41);
+  border-radius: 40px;
+}
+.contacts__button--spaced {
+  margin-bottom: 48px;
+}
+.contacts__transparent-text {
+  color: rgb(159, 173, 194);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+}
+.contacts__transparent-text--spaced {
+  margin: 0;
+}
+.contacts__base-text {
+  color: rgb(62, 62, 62);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.contacts__base-text--spaced {
+  margin-top: 8px;
+  margin-bottom: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */

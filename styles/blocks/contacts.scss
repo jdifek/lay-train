@@ -1,0 +1,145 @@
+.contacts {
+
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: -1.5px;
+  }
+  
+  &__grid {
+    display: grid;
+    @include pageGrid;
+
+    &-input {
+      display: grid;
+      grid-column: 1 / -1;
+
+      @include onTablet {
+        grid-column: 1 / 4;
+      }
+
+      @include onDesktop {
+
+      }
+    }
+
+    &-contact {
+      display: grid;
+      grid-column: 1 / -1;
+
+      @include onTablet {
+        grid-column: 4 / 6;
+      }
+
+      @include onDesktop {
+
+      }
+    }
+  }
+
+  &__input-name {
+    
+  }
+  
+  &__input-email {
+    
+  }
+  
+  &__input-message {
+    
+  }
+
+  &__input-name,
+  &__input-email,
+  &__input-message {
+    color: rgb(126, 126, 131);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    box-sizing: border-box;
+    border-width: 0;
+    width: 100%;
+    height: 48px;
+    border-radius: 40px;
+    background: rgb(248, 248, 250);
+    padding: 14px 16px;
+  }
+
+  &__input-name--spaced {
+    margin-bottom: 16px;
+  }
+
+  &__input-email--spaced {
+    margin-bottom: 16px;
+  }
+
+  &__input-message {
+    height: 148px;
+    text-align: left;
+  }
+
+  &__input-message--spaced {
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    color: rgb(41, 41, 41);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0px;
+    text-align: center;
+
+    height: 56px;
+    width: 100%;
+
+    border: 3px solid rgb(41, 41, 41);
+    border-radius: 40px;
+
+    
+
+    @include onTablet {
+      
+    }
+
+    @include onDesktop {
+      
+    }
+  }
+
+  &__button--spaced {
+    margin-bottom: 48px;
+  }
+
+  &__transparent-text {
+    color: rgb(159, 173, 194);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__transparent-text--spaced {
+    margin: 0;
+  }
+
+  &__base-text {
+    color: rgb(62, 62, 62);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0px;
+    text-align: left;
+
+    
+  }
+
+  &__base-text--spaced {
+    margin-top: 8px;
+    margin-bottom: 24px;
+  }
+}
