@@ -489,6 +489,7 @@
   }
 }
 .contacts__grid-contact {
+  height: max-content;
   display: grid;
   grid-column: 1/-1;
 }
@@ -561,7 +562,6 @@
   margin-bottom: 48px;
 }
 .contacts__transparent-text {
-  height: max-content;
   color: rgb(159, 173, 194);
   font-family: Inter;
   font-size: 14px;

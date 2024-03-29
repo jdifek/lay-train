@@ -26,6 +26,7 @@
     }
 
     &-contact {
+      height: max-content;
       display: grid;
       grid-column: 1 / -1;
 
@@ -114,7 +115,7 @@
   }
 
   &__transparent-text {
-    height: max-content;
+
     color: rgb(159, 173, 194);
     font-family: Inter;
     font-size: 14px;
@@ -126,6 +127,7 @@
   }
 
   &__base-text {
+
     color: rgb(62, 62, 62);
     font-family: Inter;
     font-size: 16px;
@@ -133,8 +135,6 @@
     line-height: 140%;
     letter-spacing: 0px;
     text-align: left;
-
-    
   }
 
   &__base-text--spaced {
