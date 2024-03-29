@@ -54,6 +54,10 @@
     border-radius: 40px;
     background: rgb(248, 248, 250);
     padding: 14px 16px;
+
+    &:hover {
+      color: rgb(41, 41, 41);
+    }
   }
 
   &__input-name--spaced {
@@ -74,7 +78,7 @@
   }
 
   &__button {
-    color: rgb(41, 41, 41);
+    color: rgb(255, 255, 255);
     font-family: Inter;
     font-size: 16px;
     font-weight: 700;
@@ -86,7 +90,23 @@
     width: 100%;
 
     border: 3px solid rgb(41, 41, 41);
+    background: rgb(41, 41, 41);
     border-radius: 40px;
+
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+
+      color: rgb(41, 41, 41);
+      background: #fff;
+    }
+
+    &:active {
+      color: rgb(255, 255, 255);
+      background: rgb(17, 17, 17);
+    }
   }
 
   &__button--spaced {

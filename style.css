@@ -516,6 +516,9 @@
   background: rgb(248, 248, 250);
   padding: 14px 16px;
 }
+.contacts__input-name:hover, .contacts__input-email:hover, .contacts__input-message:hover {
+  color: rgb(41, 41, 41);
+}
 .contacts__input-name--spaced {
   margin-bottom: 16px;
 }
@@ -530,7 +533,7 @@
   margin-bottom: 32px;
 }
 .contacts__button {
-  color: rgb(41, 41, 41);
+  color: rgb(255, 255, 255);
   font-family: Inter;
   font-size: 16px;
   font-weight: 700;
@@ -540,7 +543,19 @@
   height: 56px;
   width: 100%;
   border: 3px solid rgb(41, 41, 41);
+  background: rgb(41, 41, 41);
   border-radius: 40px;
+  transition: transform 0.3s;
+}
+.contacts__button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  color: rgb(41, 41, 41);
+  background: #fff;
+}
+.contacts__button:active {
+  color: rgb(255, 255, 255);
+  background: rgb(17, 17, 17);
 }
 .contacts__button--spaced {
   margin-bottom: 48px;
