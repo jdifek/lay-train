@@ -65,4 +65,20 @@
     line-height: 140%;
     letter-spacing: 0px;
   }
+
+  &__button {
+    @include pageGrid;
+
+    &--spaced {
+      grid-column: 1 / -1;
+
+      @include onTablet {
+        grid-column: 2 / -2;
+      }
+
+      @include onDesktop {
+        grid-column: 5 / 9;
+      }
+    }
+  }
 }
