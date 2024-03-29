@@ -208,10 +208,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s;
+  transition: all 0.5s;
 }
 .category__photo:hover {
-  transform: scale(1.2);
+  border-radius: 10%;
+  transform: scale(1.1);
   z-index: 1;
 }
 .category__title {
